@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardhan Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      .nav{
+          display: flex;
+          justify-content: space-between;
+          background-color: black;
+          flex-wrap: wrap;  
+          /* padding: 20px; */
+          width: 100%;
+          z-index: 1000;
+          margin-bottom: 40px;
+      }
+      .list
+      {
+        display: flex;
+        flex-direction: row ;
+        gap: 20px;
+      }
+      li{
+          list-style: none;
+      }
+      a{
+          text-decoration: none;
+      }
+      #toggle,label{
+          display: none;
+      }
+      @media (max-width:900px) 
+      {
+         .list
+         {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          display: none;
+         
+         }
+        
+         .left
+         {
+          display: flex;
+          flex-direction: column;
+         }
+         #toggle:checked ~.list{
+          display: flex;
+         }
+        .nav{
+          margin-bottom: 5px;
+        }
+         label
+         {
+          display: block;
+         }
+      }
+  </style>
+</head>
+<body>
+  <div class=" head nav">
+    <a href="#"><div class="right">
+      <h>Portfolio</h>
+   </div></a>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="tag"><i class="fa-solid fa-bars"></i></label>
+    <ul class="list">
+         <li>  <a href="#hero" class="scroll">
+          <button class="button type1">
+              <h3 class="btn-txt">Home</h3>
+            </button>
+      </a></li>
+         <li><a href="#project10" class="scroll1">
+          <button class="button type1">
+              <h3 class="btn-txt">Projects</h3>
+            </button>
+        </a> </li>
+         <li> <a href="#contact" class="scroll2">
+          <button class="button type1">
+              <h3 class="btn-txt">Contacts</h3>
+            </button>
+        </a></li>
+         
+    </ul>
+</div>
+   
+ <div class="hero-work">
+    <div class="hero" id="hero">
+      <h1 class="heading">
+        <span class="word">H</span>
+        <span class="word">i</span>
+        <span class="word">,</span>
+        <span class="word">I</span>
+        <span class="word">'</span>
+        <span class="word">m</span>
+        <span class="word">V</span>
+        <span class="word">a</span>
+        <span class="word">r</span>
+        <span class="word">d</span>
+        <span class="word">h</span>
+        <span class="word">a</span>
+        <span class="word">n</span>
+        <!-- <span class="word">K</span>
+        <span class="word">o</span>
+        <span class="word">r</span>
+        <span class="word">a</span>
+        <span class="word">d</span>
+        <span class="word">a</span> -->
+      </h1>
+      <div class="des">
+        Web developer| Uicomponets desginer|Graphic dessginer|Competitive programmer
+      </div>
+    </div>
+    <div class="work">
+      <a href="#project" class="btn-scroll" id="project10">
+          <button class="btn-wrk">
+            <h>MY WORKS</h>
+          </button>
+       </a>
+    </div>
+ </div>
+   
+    <div class="projects" id="project" >
+        <div class="wrk-heading">
+            <h3> MY WORKS</h3>
+        </div>
+    <div class="samples">
+       
+            <div class="task1 task">
+                <div class="sample1" style="width:20rem;" id="sample">
+                    <a href="flipkart/">
+                    <img src="https://media.gettyimages.com/id/2013756485/photo/in-this-photo-illustration-the-flipkart-logo-is-seen-displayed-on-a-mobile-phone-screen.jpg?s=612x612&w=0&k=20&c=RlEMsu0rImC6lbv4OZiDFKqIjYE3CMDi0_0ao0mu2S8=" id="i1">
+                </a>
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: x-large; text-decoration: none;">Filpkart clone</h><br> 
+                      
+                    </div>
+                  </div>
+                  <div class="sample2" style="width:20rem;" id="sample">
+                    <a href="tempconv/">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.67rebGaDwF0mHekF19p2ogHaE8&pid=Api&P=0&h=180" id="i1">
+                   </a>
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: x-large; text-decoration: none;">Tempature convertor</h><br> 
+                      
+                    </div>
+                  </div>
+            </div>
+              <div class="task2 task">
+                <div class="sample3" style="width:20rem;" id="sample">
+                    <a href="uicomponents/">
+                    <img src="https://cdn.dribbble.com/users/1255330/screenshots/17229824/media/cab3d6440c9151b83d5d8610b90d5906.jpg?compress=1&resize=840x630&vertical=top" id="i1">
+                   </a>
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: x-large; text-decoration: none;">Ui components</h><br> 
+                      
+                    </div>
+                  </div>
+                  <div class="sample4" style="width:20rem;" id="sample">
+                    <a href="figma/">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.6uljciGaekZjOI_Cd8qwFgHaE8&pid=Api&P=0&h=180" id="i1">
+                   </a>
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: x-large; text-decoration: none;">Figma Images</h><br> 
+                      
+                    </div>
+                  </div>
+              </div>
+            
+       
+    </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1> Contact Me</h1>
+        <h2>Email<span> </span>:<span> </span>vardhan25@gmail.com</h2>
+        <h2>Phone<span> </span>:<span> </span>+918341607250</h2>
+        <div class="social">
+            <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png" id="social">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.FeWotnRGnssUzaP_Q6mLKwHaHa&pid=Api&P=0&h=180"  id="social">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

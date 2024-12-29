@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+.head
+{
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+    color: white;  
+}
+.right
+{
+    font-size: 1.8rem;
+    color:rgb(136, 252, 242);
+    font-weight: bold;
+}
+.left {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.button
+{
+    position: relative;
+    height: 40px;
+    width: 120px;
+    border-radius: 40px;
+    background-color: transparent;
+    color: #333;
+    overflow: hidden;
+    color: blqck;
+    background-color:rgb(136, 252, 242); 
+    border: 2px solid white;
+}
+.type1:hover
+{
+    cursor: pointer;
+    background-color:rgb(136, 252, 242);    
+    color:black;
+    border: none;
+    transform: scale(1.1) ;
+}
+
+.type1::after{
+    content: "";
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 0.1px;
+    border-radius: 30px;
+    background: white;
+    rotate: 45deg;
+}
+.type1:hover::after
+{
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+.hero
+{
+    
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-top:16%;
+    padding-left:10% ;
+   
+}
+.hero-work
+{
+    min-height: 100vh;
+}
+.des
+{
+    font-size: 1.5rem;
+}
+.heading{
+    padding-top: 5%;
+    font-size: 4rem;
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: -7px;
+    padding-right: 150px;
+
+}
+.word
+{
+    opacity: 0;
+}
+/* Apply delay for each letter */
+.heading span:nth-child(1) { 
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 0s; }
+.heading span:nth-child(2) {
+    animation: fadeIn 5s ease forwards;
+     animation-delay: 0.5s; }
+.heading span:nth-child(3) { 
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 1s; }
+.heading span:nth-child(4) {animation: fadeIn 5s ease forwards;
+     animation-delay: 2s; }
+.heading span:nth-child(5) { 
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 2.5s; }
+.heading span:nth-child(6) { 
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 3s; }
+.heading span:nth-child(7) { 
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 3.5s; }
+.heading span:nth-child(8) { 
+    animation: fadeIn 5s ease forwards;
+     animation-delay: 4s; }
+.heading span:nth-child(9) {
+    animation: fadeIn 5s ease forwards;
+     animation-delay: 4.5s; }
+.heading span:nth-child(10) {
+    animation: fadeIn 5s ease forwards;
+     animation-delay:5s; }
+.heading span:nth-child(11) {
+    animation: fadeIn 5s ease forwards;
+     animation-delay:5.5s; }
+.heading span:nth-child(12) {
+    animation: fadeIn 5s ease forwards;
+     animation-delay:6s; }
+.heading span:nth-child(13) {
+    animation: fadeIn 5s ease forwards;
+     animation-delay: 6.5s; }
+.heading span:nth-child(14) { 
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 7s; }
+.heading span:nth-child(15) { 
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 7.5s; }
+.heading span:nth-child(16) {
+    animation: fadeIn 5s ease forwards;
+     animation-delay: 8s; }
+.heading span:nth-child(17) { 
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 8.5s; }
+.heading span:nth-child(18) {
+    animation: fadeIn 5s ease forwards;
+     animation-delay: 9s; }
+.heading span:nth-child(19) {
+    animation: fadeIn 5s ease forwards; 
+     animation-delay: 9.5s; }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-20px); } /* Start hidden and slightly above */
+    to { opacity: 1; transform: translateY(0); } /* Fully visible */
+    }
+.work
+{
+   
+    padding-left: 40%;
+}
+.btn-wrk {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 80px;
+    font-size: 1.5rem;
+    background-color: rgb(136, 252, 242);
+    border: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-wrk:hover {
+    cursor: pointer;
+    transform: scale(1.1) translateX(2px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 
+                0 0 20px rgba(255, 255, 255, 0.4), 
+                0 0 30px rgba(255, 255, 255, 0.2);
+}
+.wrk-heading
+{
+    padding-top:12%;
+    padding-left: 40%;
+    padding-bottom: 8%;
+    font-size: xx-large;
+}
+
+.projects
+{ 
+    margin-top: 40px;
+}
+.samples{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.task
+{
+  display: flex;
+  justify-content: space-around ;  
+  flex-wrap: wrap;
+ 
+
+}
+.samples
+{
+  display: flex;
+  justify-content: space-around ;  
+}
+#sample
+{
+    margin-top: 10px ;
+}
+#i1
+{
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+}
+.card-body
+{
+    text-align: center;
+}
+#sample
+{
+    background-color:rgb(136, 252, 242) ;  
+    border-radius: 10px;
+    color: black;
+    transition: all 0.5s ease;
+    height: 300px;
+}  
+#sample:hover{
+    transform: scale(1.05) translateX(-10px);
+    cursor: pointer;
+}
+#social
+{
+    height: 100px;
+    width: 100px;
+}
+.contact
+{
+    gap: 10px;
+    padding-top: 10% ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+@media  (max-width:900px)
+{
+    .head{
+        gap:10rem;
+    }
+    .heading
+    {
+        font-size: 80px;
+       letter-spacing: -8px;
+       padding-top: 15%;
+    }
+    .des
+    {
+       font-size: large;
+    }
+    .btn-wrk
+    {
+        font-size: 100%;
+    }
+    .wrk-heading
+    {
+        font-size: x-large;
+    }
+    .hero
+
+    {
+        padding: 20px;
+    }
+    .projects
+    {
+        padding: 20px;
+    }
+}
+@media  (max-width:600px)
+{
+    .heading
+    {
+        font-size: 3.8rem;
+       letter-spacing: -6px;
+       padding-top:25%;
+    }
+    .des
+    {
+        padding-bottom: 10%;
+    }
+    .work
+    {
+        padding-bottom: 5%;
+    }
+}
+@media  (max-width:480px){
+    .heading
+    {
+        margin-top: 35%;
+        font-size: 2.5rem;
+        letter-spacing: -3px;
+        padding-right: 0;
+    }
+    .des
+    {
+        font-size: 1rem;
+    }
+    .work
+    {
+      padding-left: 35%; 
+    } 
+    .wrk-heading
+    {
+        padding-left: 32%;
+    }
+    .btn-wrk{
+        margin-top: 50px;
+    }
+}
