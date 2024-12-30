@@ -70,7 +70,6 @@ body
 }
 .hero
 {
-    
     display: block;
     align-items: center;
     text-align: center;
@@ -80,20 +79,22 @@ body
 }
 .hero-work
 {
+    padding-top: 15vh;
+    align-items: center;
     min-height: 100vh;
 }
 .des
 {
+    margin-top: 20px;
     font-size: 1.5rem;
 }
 .heading{
-    padding-top: 5%;
+   
     font-size: 4rem;
     font-weight: bold;
     display: inline-block;
     letter-spacing: -7px;
     padding-right: 150px;
-
 }
 .word
 {
