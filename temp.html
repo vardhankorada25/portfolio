@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <style>
+      *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 80vh;
+
+}
+.container
+{
+    background-color: black;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+   
+    font-family: sans-serif;
+}
+h3
+{
+    font-size: larger;
+    color: white;
+}
+.temperatureicon
+{
+    color: white;
+}
+.tittle
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+}
+#celcius,#fahrenheit,#kelvin
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+input{
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+}
+.icon
+{
+    background-color: white;
+    height:40px ;
+    width: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.bt
+{
+    margin-top: 25px;
+    
+    text-align: center;
+}
+.bt button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius:3px ;
+    transition: 0.3s;
+}
+.bt:active
+{
+   transform:scale(0.9);
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <div class="container">
+        <div class="tittle">
+            <h3>Temperature convertor</h3>
+            <span class="temperatureicon">
+                <i class="fa-solid fa-temperature-full"></i>
+            </span>
+        </div>
+        <div id="celcius">
+          <input type="number" name=""
+          placeholder="celcius">
+          <span class="icon">&#8451</span>
+        </div>
+        <div id="fahrenheit">
+            <input type="number" name=""
+            placeholder="Fahrenheit">
+            <span class="icon">&#8457</span>
+          </div>
+        <div id="kelvin">
+            <input type="number" name=""
+            placeholder="Kelvin">
+            <span class="icon">&#8490</span>
+          </div>
+          <div class="bt">
+            <button>All clear</button>
+          </div>
+    </div>
+    <script>
+        celciusinput=document.querySelector('#celcius > input')
+fahrenheitinput=document.querySelector('#fahrenheit > input')
+kelvininput=document.querySelector('#kelvin > input')
+let bt=document.querySelector('.bt button')
+function rn(number)
+{
+    return Math.round(number*100)/100
+}
+celciusinput.addEventListener('input',function()
+{
+   let c=parseFloat(celciusinput.value)
+   let f=(c*(9/5))+32
+   let k=c+273.15
+   fahrenheitinput.value = rn(f)
+   kelvininput.value = rn(k)
+})
+fahrenheitinput.addEventListener('input',function()
+{
+   let f=parseFloat(fahrenheitinput.value)
+   let c=(f-32)*5/9
+   let k=c+273.15
+   celciusinput.value = rn(c)
+   kelvininput.value = rn(k)
+})
+kelvininput.addEventListener('input',function()
+{
+   let k=parseFloat(kelvininput.value)
+   let c=k-273.15
+   let f=c*(9/5)+32
+   fahrenheitinput.value = rn(f)
+   celciusinput.value = rn(c)
+})
+bt.addEventListener('click',()=>
+{
+    celciusinput.value=""
+    fahrenheitinput.value=""
+    kelvininput.value=""
+    
+})
+    </script>
+</body>
+</html>

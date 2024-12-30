@@ -289,17 +289,22 @@ body
         padding: 20px;
     }
 }
-@media  (max-width:600px)
+@media  (max-width:601px)
 {
+    .hero-work
+    {
+        min-height: 100vh;
+    }
     .heading
     {
         font-size: 3.8rem;
        letter-spacing: -6px;
        padding-top:25%;
+       padding-right: 50px;
     }
-    .des
+    .btn-wrk
     {
-        padding-bottom: 10%;
+        margin-top: 60px;
     }
     .work
     {
@@ -328,5 +333,37 @@ body
     }
     .btn-wrk{
         margin-top: 50px;
+    }
+    .contact
+    {
+        font-size: small;
+    }
+    #social
+{
+    
+    height: 80px;
+    width: 80px;
+}
+
+
+}
+@media (max-widht:1020px){
+    .hero-work
+    {
+        padding-top: 50vh;
+    }
+    .heading
+    {
+        font-size: 4.5rem;
+    }
+    .des{
+        font-size: 2rem;
+    }
+    .btn-wrk {
+        height: 50px;
+        width: 170px;
+        border-radius: 150px;
+        margin-top: 90px;
+        font-size: 2rem;
     }
 }
