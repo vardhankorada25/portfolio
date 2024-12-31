@@ -92,13 +92,26 @@ body
    
     font-size: 4rem;
     font-weight: bold;
-    display: inline-block;
-    letter-spacing: -7px;
-    padding-right: 150px;
+    letter-spacing: -8px;
+    display: flex;
+    gap: 20px;
+    padding-left:20rem;
 }
 .word
 {
     opacity: 0;
+}
+.hi
+{
+    display: inline;
+}
+.im
+{
+    display: inline;
+}
+.vardhan
+{
+    display: inline;
 }
 /* Apply delay for each letter */
 .heading span:nth-child(1) { 
@@ -164,7 +177,7 @@ body
 .work
 {
    
-    padding-left: 40%;
+    padding-left: 45%;
 }
 .btn-wrk {
     height: 40px;
@@ -199,8 +212,7 @@ body
 }
 .samples{
     display: flex;
-    flex-direction: column;
-    gap: 25px;
+    justify-content: space-around;
 }
 .task
 {
@@ -214,6 +226,7 @@ body
 {
   display: flex;
   justify-content: space-around ;  
+  flex-wrap: wrap;
 }
 #sample
 {
@@ -247,6 +260,19 @@ body
     height: 100px;
     width: 100px;
 }
+#social1
+{
+    padding-top: 15px;
+    height: 85px;
+    width: 110px;
+}
+.social
+{
+    width: 100px;
+    height:100px;
+    display: flex;
+    justify-content: space-around;
+}
 .contact
 {
     gap: 10px;
@@ -266,6 +292,8 @@ body
         font-size: 80px;
        letter-spacing: -8px;
        padding-top: 15%;
+       padding-left:10rem;
+       gap: 10px;
     }
     .des
     {
@@ -318,6 +346,9 @@ body
         font-size: 2.5rem;
         letter-spacing: -3px;
         padding-right: 0;
+        gap: 8px;
+        padding-left: 2.5rem;
+
     }
     .des
     {
@@ -325,7 +356,7 @@ body
     }
     .work
     {
-      padding-left: 35%; 
+      padding-left: 32%; 
     } 
     .wrk-heading
     {
@@ -355,6 +386,8 @@ body
     .heading
     {
         font-size: 4.5rem;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
     }
     .des{
         font-size: 2rem;
@@ -367,3 +400,15 @@ body
         font-size: 2rem;
     }
 }
+@media(max-widht:375px)
+{
+  
+    .heading
+    {
+        gap: 5px;
+        font-size: 1rem;
+        padding-left: 0px;
+    }
+
+}
+
