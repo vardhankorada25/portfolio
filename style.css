@@ -400,15 +400,10 @@ body
         font-size: 2rem;
     }
 }
-@media(max-widht:375px)
-{
-  
-    .heading
-    {
-        gap: 5px;
-        font-size: 1rem;
-        padding-left: 0px;
+@media (max-width: 376px) { 
+    .heading {
+        font-size: 2rem; 
+        
     }
-
 }
 
