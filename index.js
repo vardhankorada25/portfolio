@@ -8,7 +8,7 @@ document.querySelector('.btn-scroll').addEventListener('click', function(event) 
 });
 document.querySelector('.scroll').addEventListener('click', function(event) {
     event.preventDefault(); 
-    const targetSection = document.querySelector('#hero');
+    const targetSection = document.querySelector('#hero-work');
     window.scrollTo({
         top: targetSection.offsetTop,
         behavior: 'smooth' 
@@ -16,7 +16,7 @@ document.querySelector('.scroll').addEventListener('click', function(event) {
 });
 document.querySelector('.scroll1').addEventListener('click', function(event) {
     event.preventDefault(); 
-    const targetSection = document.querySelector('#project10');
+    const targetSection = document.querySelector('#wrk-heading');
     window.scrollTo({
         top: targetSection.offsetTop,
         behavior: 'smooth' 
